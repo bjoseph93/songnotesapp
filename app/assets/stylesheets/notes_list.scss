@@ -1,3 +1,6 @@
+.main-container {
+  display: flex;
+}
 .notes-list {
   margin: 0 auto;
   height:100vh;
@@ -12,4 +15,14 @@
   background: #fff;
   border: 1px solid #999;
   height: 10%;
+}
+
+.textarea-container {
+  height: 100vh;
+  flex-grow: 1;
+}
+
+.note-textarea {
+  height: 100%;
+  width: 100%
 }

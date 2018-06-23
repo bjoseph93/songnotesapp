@@ -2,7 +2,6 @@ var React = require("react")
 var PropTypes = require("prop-types")
 
 
-
 class App extends React.Component {
     constructor(props){
         super(props);
@@ -19,7 +18,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="main-container">
                <NotesList notes={this.props} handleNoteClick={(title, body) => this.handleNoteClick(title, body)}/>
                 <Note title={this.state.currentTitle} body={this.state.currentBody}/>
             </div>
@@ -81,7 +80,9 @@ class Note extends React.Component {
 
     render() {
         return (
-           <textarea value={this.state.body} onChange={this.handleChange}></textarea>
+            <div className="textarea-container">
+                <textarea className="note-textarea" value={this.state.body} onChange={this.handleChange}></textarea>
+            </div>
         );
     }
 }
