@@ -5,7 +5,6 @@ const axios = require("axios");
 class App extends React.Component {
     constructor(props){
         super(props);
-        debugger;
         if(Object.keys(props).length == 0){
             this.state = {
                 currentId: 0,
