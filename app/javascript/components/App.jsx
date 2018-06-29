@@ -5,11 +5,20 @@ const axios = require("axios");
 class App extends React.Component {
     constructor(props){
         super(props);
-        this.state ={
-            currentId: this.props[0].id,
-            currentTitle: this.props[0].title,
-            currentBody: this.props[0].body
-        };
+        debugger;
+        if(Object.keys(props).length == 0){
+            this.state = {
+                currentId: 0,
+                currentTitle:"",
+                currentBody: ""
+            };
+        } else {
+            this.state = {
+                currentId: this.props[0].id,
+                currentTitle: this.props[0].title,
+                currentBody: this.props[0].body
+            };
+        }
     }
 
    // handleNoteUpdateForList() {
