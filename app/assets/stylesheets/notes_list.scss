@@ -1,3 +1,26 @@
+html {
+  background: #3568eb;
+}
+
+h1{
+  color: white;
+  font-size: 50pt;
+}
+
+button {
+  color: white;
+  background: transparent;
+  font-size: 16pt;
+  border-radius: 5px;
+  margin: 1vh;
+  margin-left: 0;
+}
+
+button:hover {
+  color: #3568eb;
+  background: white;
+}
+
 .main-container {
   display: flex;
 }
@@ -7,22 +30,30 @@
   width: 33.33%;
   overflow: auto;
   background: #fff;
-  border: 1px solid #999;
   float: left;
+  background: transparent;
 }
 
 .list-element {
   background: #fff;
   border: 1px solid #999;
   height: 10%;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .textarea-container {
-  height: 100vh;
+  padding: 4px;
   flex-grow: 1;
+  bottom: 5vh;
+  position: relative;
 }
 
 .note-textarea {
   height: 100%;
   width: 100%
+}
+
+.title-textarea {
+  width: 100%;
 }
